@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{a756d12b-37da-4a20-8921-268faa0826c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{1f7eeadd-f93d-4db9-a3b1-95e21e722cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\MemoApp">
+      <UniqueIdentifier>{b6c9de9d-1566-49a6-bc1e-f637f798a064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Caret">
+      <UniqueIdentifier>{dc8569d1-c40a-4ec3-8d91-5832a68e3a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\KeyActionFactory">
+      <UniqueIdentifier>{348e2111-b2d9-48b9-9161-5dc49561b8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\Observer">
+      <UniqueIdentifier>{516c16f1-ffd8-4efe-8a23-41931ceb0ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\State">
+      <UniqueIdentifier>{1ec396ac-3708-43c4-9e64-699b3a9efd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\CommandFactory">
+      <UniqueIdentifier>{119d3e3c-dd61-4eb7-8b2e-f5a0418852e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RegionController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayIterator.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Glyph.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GlyphFactory.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Letter.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Memo.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleByteLetter.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleByteLetter.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeEditorForm.h">
+      <Filter>Controller\MemoApp</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeEditorFormApp.h">
+      <Filter>Controller\MemoApp</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caret.h">
+      <Filter>Controller\Caret</Filter>
+    </ClInclude>
+    <ClInclude Include="CaretController.h">
+      <Filter>Controller\Caret</Filter>
+    </ClInclude>
+    <ClInclude Include="CaretCoordinator.h">
+      <Filter>Controller\Caret</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyActionFactory.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlEndKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlHomeKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlLeftKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CtrlRightKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="DownKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="EndKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="EnterKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="BackspaceKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="RightKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftDownKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftLeftKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftRightKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftUpKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="UpKeyAction.h">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Model\CommandFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandFactory.h">
+      <Filter>Model\CommandFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="FontCommand.h">
+      <Filter>Model\CommandFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveCommand.h">
+      <Filter>Model\CommandFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveAsCommand.h">
+      <Filter>Model\CommandFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Controller\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Controller\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteState.h">
+      <Filter>Controller\State</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteStateAppend.h">
+      <Filter>Controller\State</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteStateInsert.h">
+      <Filter>Controller\State</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Controller\MemoApp</Filter>
+    </ClInclude>
+    <ClInclude Include="FontMatrix.h">
+      <Filter>Controller\MemoApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Composite.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Glyph.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GlyphFactory.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Letter.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Memo.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeEditorFormApp.cpp">
+      <Filter>Controller\MemoApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeEditorForm.cpp">
+      <Filter>Controller\MemoApp</Filter>
+    </ClCompile>
+    <ClCompile Include="Caret.cpp">
+      <Filter>Controller\Caret</Filter>
+    </ClCompile>
+    <ClCompile Include="CaretController.cpp">
+      <Filter>Controller\Caret</Filter>
+    </ClCompile>
+    <ClCompile Include="CaretCoordinator.cpp">
+      <Filter>Controller\Caret</Filter>
+    </ClCompile>
+    <ClCompile Include="BackspaceKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlEndKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlHomeKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlLeftKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="CtrlRightKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="DownKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="EndKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="EnterKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyActionFactory.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="RightkeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftDownKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftLeftKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftRightKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftUpKeyAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="UpKetAction.cpp">
+      <Filter>Controller\KeyActionFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Model\CommandFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandFactory.cpp">
+      <Filter>Model\CommandFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="FontCommand.cpp">
+      <Filter>Model\CommandFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveCommand.cpp">
+      <Filter>Model\CommandFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveAsCommand.cpp">
+      <Filter>Model\CommandFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteState.cpp">
+      <Filter>Controller\State</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteStateAppend.cpp">
+      <Filter>Controller\State</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteStateInsert.cpp">
+      <Filter>Controller\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleByteLetter.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleByteLetter.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Controller\MemoApp</Filter>
+    </ClCompile>
+    <ClCompile Include="FontMatrix.cpp">
+      <Filter>Controller\MemoApp</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Controller\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Controller\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CodeEditorForm20190401.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

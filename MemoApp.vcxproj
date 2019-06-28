@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="ArrayIterator.h" />
+    <ClInclude Include="BackspaceKeyAction.h" />
+    <ClInclude Include="Caret.h" />
+    <ClInclude Include="CaretController.h" />
+    <ClInclude Include="CaretCoordinator.h" />
+    <ClInclude Include="CodeEditorForm.h" />
+    <ClInclude Include="CodeEditorFormApp.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandFactory.h" />
+    <ClInclude Include="Composite.h" />
+    <ClInclude Include="CtrlEndKeyAction.h" />
+    <ClInclude Include="CtrlHomeKeyAction.h" />
+    <ClInclude Include="CtrlLeftKeyAction.h" />
+    <ClInclude Include="CtrlRightKeyAction.h" />
+    <ClInclude Include="DeleteKeyAction.h" />
+    <ClInclude Include="DoubleByteLetter.h" />
+    <ClInclude Include="DownKeyAction.h" />
+    <ClInclude Include="EndKeyAction.h" />
+    <ClInclude Include="EnterKeyAction.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="FontCommand.h" />
+    <ClInclude Include="FontMatrix.h" />
+    <ClInclude Include="Glyph.h" />
+    <ClInclude Include="GlyphFactory.h" />
+    <ClInclude Include="HomeKeyAction.h" />
+    <ClInclude Include="Iterator.h" />
+    <ClInclude Include="KeyAction.h" />
+    <ClInclude Include="KeyActionFactory.h" />
+    <ClInclude Include="LeftKeyAction.h" />
+    <ClInclude Include="Letter.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="Memo.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="RegionController.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RightKeyAction.h" />
+    <ClInclude Include="SaveAsCommand.h" />
+    <ClInclude Include="SaveCommand.h" />
+    <ClInclude Include="ShiftDownKeyAction.h" />
+    <ClInclude Include="ShiftLeftKeyAction.h" />
+    <ClInclude Include="ShiftRightKeyAction.h" />
+    <ClInclude Include="ShiftUpKeyAction.h" />
+    <ClInclude Include="SingleByteLetter.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="UpKeyAction.h" />
+    <ClInclude Include="WriteState.h" />
+    <ClInclude Include="WriteStateAppend.h" />
+    <ClInclude Include="WriteStateInsert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackspaceKeyAction.cpp" />
+    <ClCompile Include="Caret.cpp" />
+    <ClCompile Include="CaretController.cpp" />
+    <ClCompile Include="CaretCoordinator.cpp" />
+    <ClCompile Include="CodeEditorForm.cpp" />
+    <ClCompile Include="CodeEditorFormApp.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="Composite.cpp" />
+    <ClCompile Include="CtrlEndKeyAction.cpp" />
+    <ClCompile Include="CtrlHomeKeyAction.cpp" />
+    <ClCompile Include="CtrlLeftKeyAction.cpp" />
+    <ClCompile Include="CtrlRightKeyAction.cpp" />
+    <ClCompile Include="DeleteKeyAction.cpp" />
+    <ClCompile Include="DoubleByteLetter.cpp" />
+    <ClCompile Include="DownKeyAction.cpp" />
+    <ClCompile Include="EndKeyAction.cpp" />
+    <ClCompile Include="EnterKeyAction.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="FontCommand.cpp" />
+    <ClCompile Include="FontMatrix.cpp" />
+    <ClCompile Include="Glyph.cpp" />
+    <ClCompile Include="GlyphFactory.cpp" />
+    <ClCompile Include="HomeKeyAction.cpp" />
+    <ClCompile Include="KeyAction.cpp" />
+    <ClCompile Include="KeyActionFactory.cpp" />
+    <ClCompile Include="LeftKeyAction.cpp" />
+    <ClCompile Include="Letter.cpp" />
+    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="Memo.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="RegionController.cpp" />
+    <ClCompile Include="RightkeyAction.cpp" />
+    <ClCompile Include="SaveAsCommand.cpp" />
+    <ClCompile Include="SaveCommand.cpp" />
+    <ClCompile Include="ShiftDownKeyAction.cpp" />
+    <ClCompile Include="ShiftLeftKeyAction.cpp" />
+    <ClCompile Include="ShiftRightKeyAction.cpp" />
+    <ClCompile Include="ShiftUpKeyAction.cpp" />
+    <ClCompile Include="SingleByteLetter.cpp" />
+    <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="UpKetAction.cpp" />
+    <ClCompile Include="WriteState.cpp" />
+    <ClCompile Include="WriteStateAppend.cpp" />
+    <ClCompile Include="WriteStateInsert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CodeEditorForm20190401.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C4423B51-4426-4A0F-9418-5D5D64CF113C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MemoApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
